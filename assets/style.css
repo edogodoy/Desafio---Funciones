@@ -1,0 +1,232 @@
+/********************************************* GENERALES */
+
+:root {
+    --color-primario: #2B0D65;
+    --color-secundario: #4A0F6F;
+    --color-terciario: #650D1F;
+    --color-claro: #ecf0f1;
+    --color-oscuro: #34495e;
+    --color-prueba1: #f1c40f;
+    --color-prueba2: #e74c3c;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+body {
+    height: 100vh;
+    min-height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    background-color: var(--color-oscuro);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.espacio {
+    flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header {
+    color: var(--color-claro);
+    padding: 4rem 0 6rem;
+    margin-bottom: 3rem;
+
+    h1 {
+        font-size: 6rem;
+    }
+}
+.footer {
+    color: var(--color-claro);
+    padding: 4rem 0;
+    margin-top: 3rem;
+}
+.secciones {
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor {
+    width: 80%;
+    max-width: 100rem;
+    min-height: 20rem;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--color-claro);
+    text-align: center;
+    border-radius: .6rem;
+    box-shadow: .6rem 1.6rem 2rem rgba(0, 0, 0, 0.4);
+}
+.textsep {
+    margin: 2rem 0 4rem;
+}
+pre {
+    font-size: 1.4rem;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 4rem;
+    background-color: var(--color-oscuro);
+    color: var(--color-claro);
+    box-shadow: inset .6rem 1.6rem 2rem rgba(0, 0, 0, 0.4);
+}
+.tip {
+    color: var(--color-primario);
+    font-size: 1.4rem;
+    font-style: italic;
+}
+
+
+/********************************************* BORDE ROJO */
+.bordesec img {
+    max-width: 80%;
+    transition: opacity 0.12s ease-in-out;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    
+    &:hover {
+        opacity: 0.85;
+        cursor: pointer;
+        
+    }
+}
+.bordeon {
+    border: .8rem solid #ff0000;
+}
+
+
+/********************************************* STICKERS */
+.stickers {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.sticker {
+    position: relative;
+}
+.sticker img {
+    width: 100%;
+    transition: 0.3s ease-in-out;
+}
+.sticker img:hover {
+    cursor: pointer;
+}
+
+.cantidad {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    opacity: 0;
+    display: flex;
+    gap: 5rem;
+    transition: 0.2s ease-in-out;
+}
+.sticker img:hover + .cantidad,
+.cantidad:hover {
+    opacity: 1;
+}
+
+
+.buttonstk {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    height: 5rem;
+    width: 5rem;
+    position: relative;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: background-color 0.2s ease;
+}
+.buttonstk:hover {
+    background-color: white;
+}
+
+.num-producto {
+    color: var(--color-primario);
+    font-size: 5rem;
+}
+.stickerp {
+    font-size: 4rem;
+}
+.texto-cantidad {
+    color: var(--color-primario);
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+.btnvalidar {
+    background-color: var(--color-primario);
+    color: var(--color-claro);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.btnvalidar:hover {
+    background-color: var(--color-secundario);
+}
+
+
+
+
+/********************************************* PASSWORD */
+
+
+.digitos {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.select {
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+    border: none;
+}
+.resultado_select {
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+
+
+
+
+
+@keyframes temblor {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+.temblor {
+    animation: temblor 0.3s ease-in-out;
+}
