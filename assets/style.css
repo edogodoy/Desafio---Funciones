@@ -104,86 +104,7 @@ p {
 }
 
 
-/********************************************* BORDE ROJO */
-.bordesec img {
-    max-width: 80%;
-    transition: opacity 0.12s ease-in-out;
-    border-radius: 1.5rem;
-    box-sizing: border-box;
-    
-    &:hover {
-        opacity: 0.85;
-        cursor: pointer;
-        
-    }
-}
-.bordeon {
-    border: .8rem solid #ff0000;
-}
 
-
-/********************************************* STICKERS */
-.stickers {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin: 2rem 0;
-}
-.sticker {
-    position: relative;
-}
-.sticker img {
-    width: 100%;
-    transition: 0.3s ease-in-out;
-}
-.sticker img:hover {
-    cursor: pointer;
-}
-
-.cantidad {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 4rem;
-    opacity: 0;
-    display: flex;
-    gap: 5rem;
-    transition: 0.2s ease-in-out;
-}
-.sticker img:hover + .cantidad,
-.cantidad:hover {
-    opacity: 1;
-}
-
-
-.buttonstk {
-    background-color: rgba(255, 255, 255, 0.7);
-    border: none;
-    height: 5rem;
-    width: 5rem;
-    position: relative;
-    border-radius: 5rem;
-    cursor: pointer;
-    font-size: 4rem;
-    transition: background-color 0.2s ease;
-}
-.buttonstk:hover {
-    background-color: white;
-}
-
-.num-producto {
-    color: var(--color-primario);
-    font-size: 5rem;
-}
-.stickerp {
-    font-size: 4rem;
-}
-.texto-cantidad {
-    color: var(--color-primario);
-    font-size: 3rem;
-    margin: 2rem 0;
-}
 .button {
     background-color: var(--color-primario);
     color: var(--color-claro);
@@ -197,47 +118,10 @@ p {
 .button:hover {
     background-color: var(--color-secundario);
 }
-
-
-
-
-/********************************************* PASSWORD */
-
-
-.digitos {
+.divbtn {
+    width: 100%;
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    margin: 2rem 0;
+    gap: 3rem;
 }
-
-.select {
-    font-size: 3rem;
-    text-align: center;
-    padding: 1rem;
-    border: none;
-}
-.resultado_select {
-    font-size: 3rem;
-    margin: 2rem 0;
-}
-
-
-
-
-
-
-@keyframes temblor {
-    0% { transform: translateX(0); }
-    25% { transform: translateX(-5px); }
-    50% { transform: translateX(5px); }
-    75% { transform: translateX(-5px); }
-    100% { transform: translateX(0); }
-}
-.temblor {
-    animation: temblor 0.3s ease-in-out;
-}
-
-
-
 
