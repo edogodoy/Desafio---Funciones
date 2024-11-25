@@ -184,7 +184,7 @@ p {
     font-size: 3rem;
     margin: 2rem 0;
 }
-.btnvalidar {
+.button {
     background-color: var(--color-primario);
     color: var(--color-claro);
     padding: 1rem 2rem;
@@ -194,7 +194,7 @@ p {
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
-.btnvalidar:hover {
+.button:hover {
     background-color: var(--color-secundario);
 }
 
@@ -237,3 +237,7 @@ p {
 .temblor {
     animation: temblor 0.3s ease-in-out;
 }
+
+
+
+
